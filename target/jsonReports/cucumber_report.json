@@ -1,0 +1,352 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 26,
+        "name": "Successful Payment Flow",
+        "description": "",
+        "id": "verify-mindtrans-e2e-functionality;successful-payment-flow;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 4198558071,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user launch \"https://demo.midtrans.com/\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"https://demo.midtrans.com/\"",
+                  "offset": 12
+                }
+              ],
+              "location": "StepDefination.user_launch(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 4588336897,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "click on \"BUY NOW\" button",
+            "match": {
+              "arguments": [
+                {
+                  "val": "BUY NOW",
+                  "offset": 10
+                }
+              ],
+              "location": "StepDefination.click_on_button(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.WebDriverException: chrome not reachable\n  (Session info: chrome\u003d80.0.3987.132)\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027GS-2657\u0027, ip: \u0027127.0.1.1\u0027, os.name: \u0027Linux\u0027, os.arch: \u0027amd64\u0027, os.version: \u00275.3.0-40-generic\u0027, java.version: \u00271.8.0_242\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.132, chrome: {chromedriverVersion: 80.0.3987.106 (f68069574609..., userDataDir: /tmp/.com.google.Chrome.g8mrKk}, goog:chromeOptions: {debuggerAddress: localhost:38037}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}\nSession ID: 3f14abbb32039f9be68e0a64d40744b4\n*** Element info: {Using\u003dxpath, value\u003d//*[@value\u003d\u002720000\u0027]}\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:353)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementsByXPath(RemoteWebDriver.java:432)\n\tat org.openqa.selenium.By$ByXPath.findElements(By.java:348)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:311)\n\tat com.dkatalis.DkatalisAssignment.CommonUtilities.clearTextInTextBoxByValue(CommonUtilities.java:513)\n\tat com.dkatalis.stepdefinition.StepDefination.amount_as(StepDefination.java:36)\n\tat ✽.enter amount as \"40000\" inspite of \"20000\"(src/test/java/com/dkatalis/DkatalisAssignment/features/Verify_Mindtrans_Scenario.feature:7)\n",
+              "duration": 11398882,
+              "status": "failed"
+            },
+            "line": 7,
+            "name": "enter amount as \"40000\" inspite of \"20000\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"40000\"",
+                  "offset": 16
+                },
+                {
+                  "val": "\"20000\"",
+                  "offset": 35
+                }
+              ],
+              "location": "StepDefination.amount_as(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 9275,
+              "status": "skipped"
+            },
+            "line": 8,
+            "name": "enter name as \"mayur\" inspite of \"Budi\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"mayur\"",
+                  "offset": 14
+                },
+                {
+                  "val": "\"Budi\"",
+                  "offset": 33
+                }
+              ],
+              "location": "StepDefination.enter_name_as(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3012,
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "email as \"mayursapre.ms@gmail.com\" inspite of \"budi@utomo.com\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"mayursapre.ms@gmail.com\"",
+                  "offset": 9
+                },
+                {
+                  "val": "\"budi@utomo.com\"",
+                  "offset": 46
+                }
+              ],
+              "location": "StepDefination.email_as(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2784,
+              "status": "skipped"
+            },
+            "line": 10,
+            "name": "phone number as \"9876543210\" inspite of \"081808466410\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"9876543210\"",
+                  "offset": 16
+                },
+                {
+                  "val": "\"081808466410\"",
+                  "offset": 40
+                }
+              ],
+              "location": "StepDefination.phone_number_as(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2645,
+              "status": "skipped"
+            },
+            "line": 11,
+            "name": "city as \"Pune\" inspite of \"Jakarta\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Pune\"",
+                  "offset": 8
+                },
+                {
+                  "val": "\"Jakarta\"",
+                  "offset": 26
+                }
+              ],
+              "location": "StepDefination.city_as(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3224,
+              "status": "skipped"
+            },
+            "line": 12,
+            "name": "address as \"Baner\" inspite of \"MidPlaza 2, 4th Floor Jl.Jend.Sudirman Kav.10-11\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Baner\"",
+                  "offset": 11
+                },
+                {
+                  "val": "\"MidPlaza 2, 4th Floor Jl.Jend.Sudirman Kav.10-11\"",
+                  "offset": 30
+                }
+              ],
+              "location": "StepDefination.address_as(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2807,
+              "status": "skipped"
+            },
+            "line": 13,
+            "name": "postalcode as \"411045\" inspite of \"10220\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"411045\"",
+                  "offset": 14
+                },
+                {
+                  "val": "\"10220\"",
+                  "offset": 34
+                }
+              ],
+              "location": "StepDefination.postalcode_as(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3042,
+              "status": "skipped"
+            },
+            "line": 14,
+            "name": "click on \"CHECKOUT\" button",
+            "match": {
+              "arguments": [
+                {
+                  "val": "CHECKOUT",
+                  "offset": 10
+                }
+              ],
+              "location": "StepDefination.click_on_button(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3049,
+              "status": "skipped"
+            },
+            "line": 15,
+            "name": "click on \"Continue\" button",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Continue",
+                  "offset": 10
+                }
+              ],
+              "location": "StepDefination.click_on_button(String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 3939,
+              "status": "skipped"
+            },
+            "line": 16,
+            "name": "select payment option as \"Credit Card\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Credit Card",
+                  "offset": 26
+                }
+              ],
+              "location": "StepDefination.select_payment_option_as(String,String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 3757,
+              "status": "skipped"
+            },
+            "line": 17,
+            "name": "enter the \"4811 1111 1111 1114\" in \"Card number\" field",
+            "match": {
+              "arguments": [
+                {
+                  "val": "4811 1111 1111 1114",
+                  "offset": 11
+                },
+                {
+                  "val": "Card number",
+                  "offset": 36
+                }
+              ],
+              "location": "StepDefination.enter_and(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2655,
+              "status": "skipped"
+            },
+            "line": 18,
+            "name": "enter the \"05/20\" in \"MM/YY\" field",
+            "match": {
+              "arguments": [
+                {
+                  "val": "05/20",
+                  "offset": 11
+                },
+                {
+                  "val": "MM/YY",
+                  "offset": 22
+                }
+              ],
+              "location": "StepDefination.enter_and(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2647,
+              "status": "skipped"
+            },
+            "line": 19,
+            "name": "enter the \"123\" in \"CVV\" field",
+            "match": {
+              "arguments": [
+                {
+                  "val": "123",
+                  "offset": 11
+                },
+                {
+                  "val": "CVV",
+                  "offset": 20
+                }
+              ],
+              "location": "StepDefination.enter_and(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2610,
+              "status": "skipped"
+            },
+            "line": 20,
+            "name": "click on \"PAYNOW\" button",
+            "match": {
+              "arguments": [
+                {
+                  "val": "PAYNOW",
+                  "offset": 10
+                }
+              ],
+              "location": "StepDefination.click_on_button(String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Verify Mindtrans E2E functionality",
+    "description": "",
+    "id": "verify-mindtrans-e2e-functionality",
+    "keyword": "Feature",
+    "uri": "src/test/java/com/dkatalis/DkatalisAssignment/features/Verify_Mindtrans_Scenario.feature",
+    "tags": []
+  }
+]
